@@ -1,9 +1,9 @@
-from dash import Dash, html
+import logging
+import Pages
+from WebEngine import dash_engine
 
-app = Dash(__name__)
-server = app.server
+pages = []
+pages.append(Pages.HomePage())
 
-app.layout = [html.Div(children='Hello JH')]
-
-if __name__ == '__main__':
-    app.run_server(debug=True)
+eng = dash_engine.DashEngine('Dashboard', 'Dashboard', pages, logging_level= logging.ERROR)
+server = eng.server

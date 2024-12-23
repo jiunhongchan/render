@@ -1,0 +1,23 @@
+
+.ag-theme-alpine.default {
+    --ag-row-border-style: none;
+    --ag-row-border-width: 0px;
+    /*--ag-cell-horizontal-border: solid var(--ag-secondary-border-color);*/
+    --ag-odd-row-background-color: var(--bs-gray-100);
+    --ag-row-hover-color: #faedcd;
+}
+
+.ag-theme-alpine.row_spacing_sm { --ag-grid-size: 3px; --ag-header-height: 30px }
+.ag-theme-alpine.row_spacing_md { --ag-grid-size: 4px; --ag-header-height: 35px}
+.ag-theme-alpine.row_spacing_lg { --ag-grid-size: 5px; --ag-header-height: 40px}
+
+
+/*
+When using Auto Height, there is a minimum of 150px set to the grid rows section. 
+This is to avoid an empty grid which would look weird. 
+To remove this minimum height, add the following CSS:
+*/
+
+.ag-center-cols-viewport {
+    min-height: unset !important;
+}

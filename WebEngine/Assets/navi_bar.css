@@ -1,0 +1,38 @@
+.navi_bar{
+    /*font-family: 'Times New romans', serif;*/
+}
+
+/* background style of navi bar*/
+.navi_bar.bg-light{
+    background-color: var(--bs-gray-800) !important;
+}
+
+/* padding and margin of 'Dashboard' label*/
+.navi_bar .container{
+    padding-left: 5%;
+    margin-left: 0px; 
+}
+
+/* style of 'Dashboard' label on top-left*/
+.navi_bar .navbar-brand{    
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Times New romans', serif;
+}
+
+/* style of 'home', 'page1' etc navi button*/
+.navi_bar .navbar-nav{    
+    --bs-nav-link-color: white;
+    --bs-nav-link-hover-color: wheat;
+    --bs-nav-link-disabled-color: grey;
+    --bs-navbar-nav-link-padding-x: 20px;
+    font-size: 18px;
+}
+
+/* style of navi button when brower width is small*/
+.navi_bar .navbar-toggler{
+    color: var(--bs-gray-600); /*border color when clicked*/
+    background-color: var(--bs-gray-700);
+    --bs-navbar-toggler-border-color: var(--bs-gray-600);
+}
